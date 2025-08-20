@@ -1,0 +1,18 @@
+ <header class="navbar">
+    <div class="container">
+      <div class="logo">DeeKay</div>
+      <nav class="nav-links">
+        <a href="#" routerLink="/">Home</a>
+        <a href="#" routerLink="pgae-product">Product</a>
+        <a href="#">About</a>
+        <a href="#">Services</a>
+        <a href="#" routerLink="contact">Contact</a>
+      </nav>
+      <div class="cart">
+        <a href="#" routerLink="/cart">
+          <i class="fa-solid fa-cart-shopping"></i>
+          <span class="cart-count"> {{ cartService.GetCartItems().length }}</span>
+        </a>
+      </div>
+    </div>
+</header>

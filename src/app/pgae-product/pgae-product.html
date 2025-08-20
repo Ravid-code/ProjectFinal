@@ -1,0 +1,11 @@
+<div class="productList">
+  @for(item of productService.getProducts(); track item.id){
+   <a  [routerLink]="'/productDetail'"  [queryParams]="{ product_id: item.id }" >
+       <app-crad-products 
+       [product]="item"
+       (onAddToCart)="AddToCart($event)"
+       >
+    </app-crad-products>
+</a>
+  }
+</div>
